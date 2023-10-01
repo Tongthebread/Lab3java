@@ -1,4 +1,4 @@
-package se.kth.anderslm.labb3.shapes; // TODO: Change to your package name
+package com.example.formermedarv; // TODO: Change to your package name
 
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;

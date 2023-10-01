@@ -1,4 +1,4 @@
-package se.kth.anderslm.labb3;
+package com.example.formermedarv;
 
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
