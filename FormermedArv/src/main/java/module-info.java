@@ -1,8 +1,8 @@
-module com.example.formermedarv {
+module com.tong3.formermedarv {
     requires javafx.controls;
     requires javafx.fxml;
 
 
-    opens com.example.formermedarv to javafx.fxml;
-    exports com.example.formermedarv;
+    opens com.tong3.formermedarv to javafx.fxml;
+    exports com.tong3.formermedarv;
 }

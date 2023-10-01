@@ -1,4 +1,4 @@
-package se.kth.anderslm.labb3.shapes; // TODO: Change to your package name
+package com.tong3.formermedarv.shapes; // TODO: Change to your package name
 
 import javafx.scene.paint.Color;
 
@@ -25,7 +25,10 @@ public class World {
         this.width = width;
         this.height = height;
 
-        shapes = new Shape[0]; // an array of references (change to non-zero size)
+        shapes = new Shape[1]; // an array of references (change to non-zero size)
+        shapes[0] = new Line(0, 0, 100, 80, Color.RED);
+        shapes[0].setVelocity(20, 40);
+
         // Create the actual Shape objects (sub types)
         // ....
     }

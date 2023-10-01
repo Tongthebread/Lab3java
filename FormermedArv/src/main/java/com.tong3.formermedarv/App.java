@@ -1,5 +1,7 @@
-package se.kth.anderslm.labb3;
+package com.tong3.formermedarv;
 
+import com.tong3.formermedarv.shapes.World;
+import com.tong3.formermedarv.shapes.Shape;
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
 import javafx.scene.Group;
@@ -10,7 +12,6 @@ import javafx.scene.control.Alert;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
-import se.kth.anderslm.labb3.shapes.*;
 
 public class App extends Application {
 
