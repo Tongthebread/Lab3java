@@ -41,6 +41,25 @@ public class Line extends Shape {
         y2 += getDy() * elapsedTimeNs / BILLION;
     }
     @Override
+    protected void constrain(
+            double boxX, double boxY,
+            double boxWidth, double boxHeight) {
+        // If outside the box - calculate new dx and dy
+        super.constrain(boxX, boxY, boxWidth, boxHeight);
+        double dx = getDx(), dy = getDy();
+        if (this.x2 < boxX) {
+            dx = Math.abs(getDx());
+        } else if (this.x2 > boxWidth) {
+            dx = -Math.abs(getDx());
+        }
+        if (this.y2 < boxY) {
+            dy = Math.abs(getDy());
+        } else if (this.y2 > boxHeight) {
+            dy = -Math.abs(getDy());
+        }
+        setVelocity(dx, dy);
+    }
+    @Override
     public void paint(GraphicsContext gc) {
         gc.setStroke(getColor());
         gc.strokeLine(getX(), getY(), x2, y2);
